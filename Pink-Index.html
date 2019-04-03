@@ -3,33 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
         <div class="main-header__wrap">
-            <nav class="main-nav">
-                <button class="modal-open" type="button">Открыть меню</button>
-                <button class="modal-close" type="button">Закрыть</button>
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a>Pink</a></li>
-                    <li class="site-list__item"><a href="#">Главная</a></li>
-                    <li class="site-list__item"><a href="#">Фотографии</a></li>
-                    <li class="site-list__item"><a href="#">Конкурс</a></li>
-                    <li class="site-list__item"><a href="#">Html Academy</a></li>
-                </ul>
-            </nav>
+            <div class="main-header__container">
+                <nav class="main-nav">
+                    <ul class="main-nav__list-logo">
+                        <li class="main-nav__logo">
+                            <button class="modal-open" type="button">Открыть меню</button>
+                            <button class="modal-close" type="button">Закрыть</button>
+                            <a class="logo-img" href="#">
+                                <img class="mobile-logo" src="img/mobile/logotype-white-mobile.svg.png" alt="Логотип">
+                                <img class="tabel-logo" src="img/tabel/logotype-white-tablet.svg.png" alt="Логотип">
+                                <img class="desktop-logo" src="img/desktop/logotype-white-desktop.svg.png" alt="Логотип">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item"><a class="site-list__link" href="#">Главная</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="#">Фотографии</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="#">Конкурс</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="#">Html Academy</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+    </header>
+    <main class="main-page">
         <section class="application">
+            <div class="aplication__logo"></div>
             <a class="application__button" href="#">Скачать приложение</a>
             <img class="application__for-iphone" src="#" alt="Iphone">
             <img class="application__for-android" src="#" alt="Android">
             <img class="application__for-microsoft" src="#" alt="Microsoft">
             <p class="applicatio__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </section>
-    </header>
-    <main class="main-page">
         <section class="advantage-logo">
             <h1 class="advantage-logo__item">Устали от серости мегаполиса?</h1>
             <h1 class="advantage-logo__item">Нам есть, что предложить!</h1>
@@ -52,6 +66,19 @@
                 </h2>
                 <span class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
                     новых</span>
+            </p>
+        </section>
+        <section class="effect">
+            <img src="#" alt="clock">
+            <p class="effect__text">
+                <h2 class="effect__logo">Эффект на 24 часа!</h2>
+                <span class="effect__info">
+                    Британские ученые провели исследования
+                    и доказали, что положительный эффект
+                    от использования приложения длится
+                    целые сутки!
+                    <a href="#">Узнать больше об исследовании</a>
+                </span>
             </p>
         </section>
         <section class="feedback">
@@ -128,6 +155,15 @@
             <img class="map__img" src="#" alt="карта">
         </section>
     </main>
+    <footer class="main-footer">
+        <a href="#" class="logo-link"></a>
+        <div class="main-footer__social">
+            <a href="#">Твитер</a>
+            <a href="#">Фейсбук</a>
+            <a href="#">Ютуб</a>
+        </div>
+        <a href="#" class="main-footer__developed">Разработано</a>
+    </footer>
 </body>
 
 </html>
